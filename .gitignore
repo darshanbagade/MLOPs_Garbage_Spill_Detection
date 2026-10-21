@@ -1,0 +1,14 @@
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.env
+mlruns/
+runs/
+data/predictions.db
+data/*.sqlite
+data/*.db
+reports/*.csv
+reports/*.png
+.DS_Store

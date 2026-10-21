@@ -1,0 +1,12 @@
+services:
+  garbage-spill-mlops:
+    build: .
+    container_name: garbage-spill-mlops
+    ports:
+      - "8000:8000"
+    environment:
+      PREDICTIONS_DB: /app/data/predictions.db
+      LOW_CONFIDENCE_THRESHOLD: "0.50"
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped

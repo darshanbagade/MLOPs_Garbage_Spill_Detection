@@ -1,0 +1,9 @@
+# Copy this file to your dataset folder as data.yaml and update the root path.
+# These paths/class labels mirror the supplied spill training notebook.
+# Labels 0–5 are numeric in the supplied notebook; check the exported dataset YAML.
+path: C:/datasets/spill
+train: train/images
+val: valid/images
+test: test/images
+nc: 6
+names: ['0', '1', '2', '3', '4', '5']
